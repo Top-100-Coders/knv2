@@ -1,0 +1,702 @@
+[
+    {
+        "Name": "Adish",
+        "Skills": [
+            "flutter",
+            "agile"
+        ],
+        "Karma": 5500,
+        "Location": "Ernakulam",
+        "Projects": [
+            "Password cracker",
+            "recipe checker"
+        ],
+        "Git Activity": 57
+    },
+    {
+        "Name": "John",
+        "Skills": [
+            "javascript",
+            "react"
+        ],
+        "Karma": 2300,
+        "Location": "Seattle",
+        "Projects": [
+            "Weather app",
+            "Todo list"
+        ],
+        "Git Activity": 67
+    },
+    {
+        "Name": "Emma",
+        "Skills": [
+            "python",
+            "django"
+        ],
+        "Karma": 4100,
+        "Location": "Austin",
+        "Projects": [
+            "E-commerce platform",
+            "Blog"
+        ],
+        "Git Activity": 72
+    },
+    {
+        "Name": "Sophia",
+        "Skills": [
+            "java",
+            "spring"
+        ],
+        "Karma": 3700,
+        "Location": "San Francisco",
+        "Projects": [
+            "Banking app",
+            "Inventory management"
+        ],
+        "Git Activity": 65
+    },
+    {
+        "Name": "Oliver",
+        "Skills": [
+            "ruby",
+            "rails"
+        ],
+        "Karma": 1800,
+        "Location": "New York",
+        "Projects": [
+            "Social network",
+            "Job board"
+        ],
+        "Git Activity": 61
+    },
+    {
+        "Name": "Mia",
+        "Skills": [
+            "swift",
+            "iOS"
+        ],
+        "Karma": 2500,
+        "Location": "Los Angeles",
+        "Projects": [
+            "Fitness tracker",
+            "Music app"
+        ],
+        "Git Activity": 69
+    },
+    {
+        "Name": "Liam",
+        "Skills": [
+            "kotlin",
+            "android"
+        ],
+        "Karma": 3200,
+        "Location": "Denver",
+        "Projects": [
+            "Travel app",
+            "Expense tracker"
+        ],
+        "Git Activity": 74
+    },
+    {
+        "Name": "Isabella",
+        "Skills": [
+            "php",
+            "laravel"
+        ],
+        "Karma": 1500,
+        "Location": "Chicago",
+        "Projects": [
+            "Online marketplace",
+            "News aggregator"
+        ],
+        "Git Activity": 58
+    },
+    {
+        "Name": "Ethan",
+        "Skills": [
+            "typescript",
+            "angular"
+        ],
+        "Karma": 2900,
+        "Location": "Boston",
+        "Projects": [
+            "Project management tool",
+            "Analytics dashboard"
+        ],
+        "Git Activity": 63
+    },
+    {
+        "Name": "Ava",
+        "Skills": [
+            "c#",
+            "asp.net"
+        ],
+        "Karma": 4500,
+        "Location": "Toronto",
+        "Projects": [
+            "E-learning platform",
+            "CRM"
+        ],
+        "Git Activity": 70
+    },
+    {
+        "Name": "Noah",
+        "Skills": [
+            "go",
+            "microservices"
+        ],
+        "Karma": 3400,
+        "Location": "Vancouver",
+        "Projects": [
+            "API gateway",
+            "Messaging service"
+        ],
+        "Git Activity": 76
+    },
+    {
+        "Name": "Charlotte",
+        "Skills": [
+            "c++",
+            "qt"
+        ],
+        "Karma": 1200,
+        "Location": "Montreal",
+        "Projects": [
+            "Photo editor",
+            "Video player"
+        ],
+        "Git Activity": 55
+    },
+    {
+        "Name": "Lucas",
+        "Skills": [
+            "rust",
+            "webassembly"
+        ],
+        "Karma": 2100,
+        "Location": "Berlin",
+        "Projects": [
+            "Blockchain explorer",
+            "Smart contract IDE"
+        ],
+        "Git Activity": 60
+    },
+    {
+        "Name": "Amelia",
+        "Skills": [
+            "scala",
+            "akka"
+        ],
+        "Karma": 3900,
+        "Location": "London",
+        "Projects": [
+            "Real-time analytics",
+            "IoT platform"
+        ],
+        "Git Activity": 78
+    },
+    {
+        "Name": "Benjamin",
+        "Skills": [
+            "elixir",
+            "phoenix"
+        ],
+        "Karma": 1600,
+        "Location": "Dublin",
+        "Projects": [
+            "Chat application",
+            "WebRTC client"
+        ],
+        "Git Activity": 66
+    },
+    {
+        "Name": "Harper",
+        "Skills": [
+            "r",
+            "shiny"
+        ],
+        "Karma": 4800,
+        "Location": "Sydney",
+        "Projects": [
+            "Data visualization",
+            "Predictive modeling"
+        ],
+        "Git Activity": 71
+    },
+    {
+        "Name": "Mason",
+        "Skills": [
+            "matlab",
+            "simulink"
+        ],
+        "Karma": 3100,
+        "Location": "Melbourne",
+        "Projects": [
+            "Robotics control",
+            "Signal processing"
+        ],
+        "Git Activity": 64
+    },
+    {
+        "Name": "Evelyn",
+        "Skills": [
+            "perl",
+            "mojolicious"
+        ],
+        "Karma": 1900,
+        "Location": "Adelaide",
+        "Projects": [
+            "Web scraper",
+            "Log parser"
+        ],
+        "Git Activity": 62
+    },
+    {
+        "Name": "Logan",
+        "Skills": [
+            "shell",
+            "bash"
+        ],
+        "Karma": 2700,
+        "Location": "Perth",
+        "Projects": [
+            "Automation scripts",
+            "Deployment tools"
+        ],
+        "Git Activity": 59
+    },
+    {
+        "Name": "Abigail",
+        "Skills": [
+            "powershell",
+            "windows"
+        ],
+        "Karma": 4200,
+        "Location": "Brisbane",
+        "Projects": [
+            "System administration",
+            "Monitoring"
+        ],
+        "Git Activity": 73
+    },
+    {
+        "Name": "Aiden",
+        "Skills": [
+            "lua",
+            "love2d"
+        ],
+        "Karma": 3500,
+        "Location": "Auckland",
+        "Projects": [
+            "2D game engine",
+            "Physics sandbox"
+        ],
+        "Git Activity": 68
+    },
+    {
+        "Name": "Emily",
+        "Skills": [
+            "clojure",
+            "ring"
+        ],
+        "Karma": 1100,
+        "Location": "Wellington",
+        "Projects": [
+            "Functional web app",
+            "AI experiments"
+        ],
+        "Git Activity": 56
+    },
+    {
+        "Name": "Sebastian",
+        "Skills": [
+            "groovy",
+            "grails"
+        ],
+        "Karma": 2400,
+        "Location": "Cape Town",
+        "Projects": [
+            "Rapid web development",
+            "CMS"
+        ],
+        "Git Activity": 75
+    },
+    {
+        "Name": "Sofia",
+        "Skills": [
+            "cobol",
+            "mainframe"
+        ],
+        "Karma": 3800,
+        "Location": "Johannesburg",
+        "Projects": [
+            "Legacy system migration",
+            "Banking software"
+        ],
+        "Git Activity": 54
+    },
+    {
+        "Name": "David",
+        "Skills": [
+            "fortran",
+            "hpc"
+        ],
+        "Karma": 1400,
+        "Location": "Pretoria",
+        "Projects": [
+            "Numerical simulations",
+            "Weather modeling"
+        ],
+        "Git Activity": 57
+    },
+    {
+        "Name": "Avery",
+        "Skills": [
+            "julia",
+            "scientific"
+        ],
+        "Karma": 4900,
+        "Location": "Durban",
+        "Projects": [
+            "Optimization algorithms",
+            "Machine learning"
+        ],
+        "Git Activity": 77
+    },
+    {
+        "Name": "Carter",
+        "Skills": [
+            "f#",
+            "functional"
+        ],
+        "Karma": 3000,
+        "Location": "Mumbai",
+        "Projects": [
+            "Distributed systems",
+            "Concurrency"
+        ],
+        "Git Activity": 79
+    },
+    {
+        "Name": "Scarlett",
+        "Skills": [
+            "ocaml",
+            "reason"
+        ],
+        "Karma": 1300,
+        "Location": "New Delhi",
+        "Projects": [
+            "Type-safe web app",
+            "Compilers"
+        ],
+        "Git Activity": 53
+    },
+    {
+        "Name": "Jose",
+        "Skills": [
+            "haskell",
+            "purescript"
+        ],
+        "Karma": 2800,
+        "Location": "Bangalore",
+        "Projects": [
+            "Formal verification",
+            "DSLs"
+        ],
+        "Git Activity": 80
+    },
+    {
+        "Name": "Luna",
+        "Skills": [
+            "elm",
+            "frontend"
+        ],
+        "Karma": 4300,
+        "Location": "Hyderabad",
+        "Projects": [
+            "SPA",
+            "UI components"
+        ],
+        "Git Activity": 82
+    },
+    {
+        "Name": "Daniel",
+        "Skills": [
+            "vue",
+            "nuxt"
+        ],
+        "Karma": 3600,
+        "Location": "Chennai",
+        "Projects": [
+            "SEO friendly web app",
+            "PWA"
+        ],
+        "Git Activity": 81
+    },
+    {
+        "Name": "Grace",
+        "Skills": [
+            "svelte",
+            "rollup"
+        ],
+        "Karma": 1000,
+        "Location": "Kolkata",
+        "Projects": [
+            "Animations",
+            "Interactive widgets"
+        ],
+        "Git Activity": 52
+    },
+    {
+        "Name": "Samuel",
+        "Skills": [
+            "graphql",
+            "apollo"
+        ],
+        "Karma": 2600,
+        "Location": "Pune",
+        "Projects": [
+            "Real-time updates",
+            "Data fetching"
+        ],
+        "Git Activity": 83
+    },
+    {
+        "Name": "Chloe",
+        "Skills": [
+            "sql",
+            "postgres"
+        ],
+        "Karma": 4400,
+        "Location": "Ahmedabad",
+        "Projects": [
+            "Database design",
+            "Query optimization"
+        ],
+        "Git Activity": 84
+    },
+    {
+        "Name": "Alexander",
+        "Skills": [
+            "nosql",
+            "mongodb"
+        ],
+        "Karma": 3300,
+        "Location": "Surat",
+        "Projects": [
+            "Scalable data storage",
+            "Geo queries"
+        ],
+        "Git Activity": 86
+    },
+    {
+        "Name": "Layla",
+        "Skills": [
+            "docker",
+            "kubernetes"
+        ],
+        "Karma": 900,
+        "Location": "Jaipur",
+        "Projects": [
+            "Containerization",
+            "Orchestration"
+        ],
+        "Git Activity": 51
+    },
+    {
+        "Name": "Michael",
+        "Skills": [
+            "ansible",
+            "terraform"
+        ],
+        "Karma": 2200,
+        "Location": "Lucknow",
+        "Projects": [
+            "Infrastructure as code",
+            "Configuration management"
+        ],
+        "Git Activity": 85
+    },
+    {
+        "Name": "Zoe",
+        "Skills": [
+            "jenkins",
+            "travis"
+        ],
+        "Karma": 4600,
+        "Location": "Kanpur",
+        "Projects": [
+            "CI/CD",
+            "Automated testing"
+        ],
+        "Git Activity": 87
+    },
+    {
+        "Name": "Matthew",
+        "Skills": [
+            "webpack",
+            "gulp"
+        ],
+        "Karma": 3700,
+        "Location": "Nagpur",
+        "Projects": [
+            "Build systems",
+            "Optimization"
+        ],
+        "Git Activity": 89
+    },
+    {
+        "Name": "Nora",
+        "Skills": [
+            "sass",
+            "less"
+        ],
+        "Karma": 800,
+        "Location": "Indore",
+        "Projects": [
+            "Styling",
+            "Theming"
+        ],
+        "Git Activity": 50
+    },
+    {
+        "Name": "Owen",
+        "Skills": [
+            "three.js",
+            "webgl"
+        ],
+        "Karma": 2000,
+        "Location": "Thane",
+        "Projects": [
+            "3D graphics",
+            "VR experiences"
+        ],
+        "Git Activity": 88
+    },
+    {
+        "Name": "Riley",
+        "Skills": [
+            "d3",
+            "chart.js"
+        ],
+        "Karma": 4700,
+        "Location": "Bhopal",
+        "Projects": [
+            "Interactive charts",
+            "Data-driven documents"
+        ],
+        "Git Activity": 90
+    },
+    {
+        "Name": "Gabriel",
+        "Skills": [
+            "tensorflow",
+            "keras"
+        ],
+        "Karma": 3800,
+        "Location": "Visakhapatnam",
+        "Projects": [
+            "Deep learning",
+            "Neural networks"
+        ],
+        "Git Activity": 91
+    },
+    {
+        "Name": "Hannah",
+        "Skills": [
+            "pytorch",
+            "caffe"
+        ],
+        "Karma": 700,
+        "Location": "Patna",
+        "Projects": [
+            "Computer vision",
+            "GANs"
+        ],
+        "Git Activity": 49
+    },
+    {
+        "Name": "Joshua",
+        "Skills": [
+            "scikit-learn",
+            "pandas"
+        ],
+        "Karma": 1700,
+        "Location": "Vadodara",
+        "Projects": [
+            "Data preprocessing",
+            "Model evaluation"
+        ],
+        "Git Activity": 92
+    },
+    {
+        "Name": "Lily",
+        "Skills": [
+            "opencv",
+            "image processing"
+        ],
+        "Karma": 4000,
+        "Location": "Ghaziabad",
+        "Projects": [
+            "Object detection",
+            "Feature extraction"
+        ],
+        "Git Activity": 93
+    },
+    {
+        "Name": "Christopher",
+        "Skills": [
+            "nlp",
+            "spacy"
+        ],
+        "Karma": 3900,
+        "Location": "Ludhiana",
+        "Projects": [
+            "Text classification",
+            "Sentiment analysis"
+        ],
+        "Git Activity": 94
+    },
+    {
+        "Name": "Aria",
+        "Skills": [
+            "rasa",
+            "chatbot"
+        ],
+        "Karma": 600,
+        "Location": "Agra",
+        "Projects": [
+            "Conversational AI",
+            "Intent recognition"
+        ],
+        "Git Activity": 48
+    },
+    {
+        "Name": "Andrew",
+        "Skills": [
+            "arduino",
+            "raspberry pi"
+        ],
+        "Karma": 1600,
+        "Location": "Nashik",
+        "Projects": [
+            "Embedded systems",
+            "IoT devices"
+        ],
+        "Git Activity": 95
+    },
+    {
+        "Name": "Ella",
+        "Skills": [
+            "unity",
+            "unreal engine"
+        ],
+        "Karma": 4100,
+        "Location": "Srinagar",
+        "Projects": [
+            "Game development",
+            "VR simulations"
+        ],
+        "Git Activity": 96
+    }
+]

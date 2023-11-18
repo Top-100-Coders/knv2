@@ -1,0 +1,12 @@
+node_modules
+dist/
+config/*.yaml
+!config/config-sample.yaml
+!config/old-config-sample.yaml
+!config/new-config-sample.yaml
+logs/*
+*.pem
+config/default.yml
+.DS_Store
+docker/data/
+data
