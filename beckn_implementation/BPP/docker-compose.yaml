@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  mongo_db:
+  bpp_mongo_db:
     image: mongo
     restart: unless-stopped
     volumes:
@@ -14,7 +14,7 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=password
       - MONGO_INITDB_DATABASE=ps
 
-  redis_db:
+  bpp_redis_db:
     image: redis:6.2.5-alpine
     restart: unless-stopped
     ports:
@@ -22,7 +22,7 @@ services:
     volumes:
       - ./data/redis_DB:/data
 
-  queue_service:
+  bpp_queue_service:
     image: rabbitmq:3.9.11-management-alpine
     restart: unless-stopped
     ports:
