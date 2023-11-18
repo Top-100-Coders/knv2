@@ -1,11 +1,11 @@
 # Mandatory
 server:
-  port: 5003
+  port: 5005
 
 # Mandatory.
 cache:
   host: "127.0.0.1"
-  port: 6379
+  port: 6380
   ttl: "PT10M"
   # Optional. Default is 0.
   db: 1
