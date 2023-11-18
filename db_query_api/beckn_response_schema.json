@@ -1,90 +1,17 @@
 {
     "context": {
-        "domain": "dsep:student-connect",
+        "domain": "dsep:student-connect", // user specified
         "action": "on_search",
         "version": "1.1.0",
-        "bap_id": "ps-bap-network.becknprotocol.io",
-        "bap_url": "https://ps-bap-client.becknprotocol.io/",
-        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
-        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
-        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
-        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
-        "timestamp": "2023-07-16T04:41:16Z"
+        "bap_id": "ps-bap-network.becknprotocol.io", // bap id
+        "bap_url": "https://ps-bap-client.becknprotocol.io/", // bap url
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io", // bpp id
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/", // bpp url
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176", // uuid generated
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176", // uuid generated
+        "timestamp": "2023-07-16T04:41:16Z" // time stamp generated
     },
     "message": {
-        "catalog": {
-            "descriptor": {
-                "name": "Student Profiles"
-            },
-            "providers": [
-                {
-                    "id": "289edce4-d002-4962-b311-4c025e22b4f6",
-                    "descriptor": {
-                        "name": "MuLearn Talent pool app",
-                        "short_desc": "MuLearn Talent pool App Pvt Ltd",
-                        "images": [
-                            {
-                                "url": "https://mulearn.in/images/logo.png"
-                            }
-                        ]
-                    },
-                    "fulfillments": [
-                        {
-                            "id": "ful-01",
-                            "type": "virtual-meet"
-                        },
-                        {
-                            "id": "ful-02",
-                            "type": "physical-meet"
-                        }
-                    ],
-                    "items": [
-                        {
-                            "descriptor": {
-                                "_id": "65573e2e3b36db865ddbbaa9",
-                                "Name": "Adish",
-                                "Skills": [
-                                    "flutter",
-                                    "agile"
-                                ],
-                                "Karma": 5500,
-                                "Location": "Ernakulam",
-                                "Projects": [
-                                    "Password cracker",
-                                    "recipe checker"
-                                ],
-                                "Git Activity": 57
-                            },
-                            "fulfillment_ids": [
-                                "ful-01",
-                                "ful-02"
-                            ]
-                        },
-                        {
-                            "id": "1225",
-                            "descriptor": {
-                                "_id": "65573e2e3b36db865ddbbaab",
-                                "Name": "Emma",
-                                "Skills": [
-                                    "python",
-                                    "django"
-                                ],
-                                "Karma": 4100,
-                                "Location": "Austin",
-                                "Projects": [
-                                    "E-commerce platform",
-                                    "Blog"
-                                ],
-                                "Git Activity": 72
-                            },
-                            "fulfillment_ids": [
-                                "ful-01",
-                                "ful-02"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        }
+        // json body
     }
 }

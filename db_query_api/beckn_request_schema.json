@@ -10,14 +10,6 @@
         "timestamp": "2023-07-16T04:41:16Z"
     },
     "message": {
-        "intent": {
-            "item": {
-                "descriptor": {
-                    "name": "Arjun",
-                    "location": "Trivandrum",
-                    "karma": "1000"
-                }
-            }
-        }
+        // json body
     }
 }
