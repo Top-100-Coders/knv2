@@ -12,7 +12,7 @@ cache:
 
 # Optional.
 responseCache:
-  mongoURL: "mongodb://tvast:password@127.0.0.1:27017/ps?authSource=admin"
+  mongoURL: "mongodb://tvast:password@127.0.0.1:27018/ps?authSource=admin"
   ttl: "PT10M"
 
 # Mandatory.
@@ -43,7 +43,7 @@ app:
     mode: network
     inboxQueue: "inbox"
     outboxQueue: "outbox"
-    amqpURL: "amqp://tvast:password@127.0.0.1:5672"
+    amqpURL: "amqp://tvast:password@127.0.0.1:5673"
 
   # Mandatory.
   actions:
