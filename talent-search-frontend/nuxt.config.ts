@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
-      api : 'http://localhost:5000',
+      api : 'http://localhost:5003',
     }
   },
   postcss: {

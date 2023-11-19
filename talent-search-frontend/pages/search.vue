@@ -1,4 +1,3 @@
-
 import { FilterBar } from '#build/components';
 <template>
     <div class="h-full w-full">
@@ -46,14 +45,15 @@ import { FilterBar } from '#build/components';
             <div class="flex flex-col gap-4">
                 <div v-for="(item, i) in data" :key="i" class="px-6 gap-4 py-4 border-2 border-grey-200 rounded-lg flex items-center">
                     <div class="h-16 w-16 bg-center rounded" :style="`background-image: url('${item.image || 'https://images.pexels.com/photos/4195342/pexels-photo-4195342.jpeg?auto=compress&cs=tinysrgb&w=64&h=35&dpr=2'}');`"></div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col w-1/2">
                         <div class="flex gap-4">
                             <span class="font-semibold text-xl"> {{ item.Name }},</span>
-                            <span class="font-semibold text-xl"> {{ item.Karma }}K</span>
+                            <!-- <span class="font-semibold text-xl"> {{ item.Karma }}K</span> -->
                         </div>
                         <div class="flex gap-4">
-                            <span class="capitalize"> {{ item.Location }},</span>
-                            <span class="capitalize">Git Activity: {{ item["Git Activity"] }}</span>
+                            <span class="capitalize">{{ item.shortDesc }}</span>
+                            <!-- <span class="capitalize"> {{ item.Location }},</span> -->
+                            <!-- <span class="capitalize">Git Activity: {{ item["Git Activity"] }}</span> -->
                         </div>
                     </div>
                     <div class="flex justify-between w-1/2 ml-auto mr-16">
@@ -81,6 +81,7 @@ import { FilterBar } from '#build/components';
     </div>
 </template>
 <script setup>
+    import { v4 as uuid } from "uuid";
     const config = useRuntimeConfig();
     const filterRef = ref(null);
     const location = ref(null);
@@ -94,17 +95,105 @@ import { FilterBar } from '#build/components';
 
     async function search(){
         if(!location.value && !name.value) return;
-        let query = '?';
-        if(name.value) query += `name=${name.value}&`;
-        if(location.value) query += `location=${location.value}&`;
-        if(filters.value.karma) query += `karma=${filters.value.karma}&`;
-        query = query.slice(0, -1);
-        const { data: users, error } = await useFetch(`${config.api}/users${query}`);
+        let reqBody;
+        if(location.value) {
+            reqBody = {
+                "context": {
+                    "domain": "dsep:talent",
+                    "action": "search",
+                    "version": "1.1.0",
+                    "bap_id": "mulearn-deva-bap",
+                    "bap_uri": "https://mulearn-deva-bap.loca.it",
+                    "location": {
+                        "country": {
+                            "name": "India",
+                            "code": "IND"
+                        },
+                        "city": {
+                            "name": "Bangalore",
+                            "code": "std:080"
+                        }
+                    },
+                    "timestamp": new Date().toISOString(),
+                    "message_id": uuid(),
+                    "transaction_id": uuid()
+                },
+                "message": {
+                    "intent": {
+                        "location": {
+                            "id": "1",
+                            "city": {
+                                "name": location.value
+                            }
+                        }
+                    }
+                }
+            }
+        }else if(name.value) {
+            reqBody = {
+                "context": {
+                    "domain": "dsep:talent",
+                    "action": "search",
+                    "version": "1.1.0",
+                    "bap_id": "mulearn-deva-bap",
+                    "bap_uri": "https://mulearn-deva-bap.loca.it",
+                    "location": {
+                        "country": {
+                            "name": "India",
+                            "code": "IND"
+                        },
+                        "city": {
+                            "name": "Bangalore",
+                            "code": "std:080"
+                        }
+                    },
+                    "timestamp": new Date().toISOString(),
+                    "message_id": uuid(),
+                    "transaction_id": uuid(),
+                },
+                "message": {
+                    "intent": {
+                        "item": {
+                            "descriptor": {
+                                "name": name.value
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        const { data: users, error } = await useFetch(`${config.api}/search`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(reqBody)
+        });
         if(error.value) {
             console.log(error.value);
             return;
         }
-        data.value = users.value.data;
+        const tempData = users.value.responses.map((x) => x.message.catalog.providers[0].items.map((y) => {
+            return {
+                ID: y.id,
+                Name: y.descriptor.name,
+                shortDesc: y.descriptor.short_desc,
+                Karma: Math.floor(Math.random() * 10),
+                Location: "Bangalore",
+                "Git Activity": Math.floor(Math.random() * 10),
+                Skills: ["React", "Node"],
+                Projects: ["Project 1", "Project 2"],
+                image: y.descriptor.images[0].url
+            }
+        })).flat();
+        data.value = tempData.reduce((acc, current) => {
+            const x = acc.find(item => item.ID === current.ID);
+            if (!x) {
+                return acc.concat([current]);
+            } else {
+                return acc;
+            }
+        }, []);
         viewResults.value = true;
     }
 </script>

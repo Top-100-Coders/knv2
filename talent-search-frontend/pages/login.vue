@@ -1,9 +1,9 @@
 <template>
-     <div class=" flex items-center justify-end bg-blue-700 w-screen h-screen">
+     <div class="flex items-center justify-end bg-blue-700 w-screen h-screen">
       <div class="h-full w-1/2 flex items-center justify-center">
         <img src="/img/undraw.png" />
       </div>
-      <div class="p-12 gap-6 bg-white rounded-lg flex flex-col items-center justify-center w-1/2 py-96">
+      <div class="h-full p-12 gap-6 bg-white rounded-lg flex flex-col items-center justify-center w-1/2">
         <div class="flex flex-col items-center justify-center gap-2">
             <Logo />
             <h1 class="opacity-80 text-sm">Welcome Back. Enter the credentials.</h1>
