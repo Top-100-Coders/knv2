@@ -15,3 +15,29 @@ In the hackathon we focused on just the discoverability aspect of mulearn profil
 - For the mulearn backend , since we didnt have access to it we generated a few sample data and set up a db and api for mocking the actual mulearn backend  
 - The Adapter APIs are responsible for parsing our API requests to be compatible with beckn protocol ( see Specification [here](https://github.com/beckn/DSEP-Specification/tree/draft/examples/student-connect/) ) and vice versa
 - The GUI Layer is conventional Front End systems that we are familiar with and therfore isnt detailed here
+
+## Port Mapping 
+we reconfigured the default port mappings of multiple components and renamed a few services so that they all run in the same system without conflicts, make sure to have these ports free
+
+```
+BAP:
+    client: 5003
+    network: 5002
+    mongodb: 27017
+    redis: 6379
+    rabbitMQ: 
+        - 5672
+        - 15672
+
+BPP:
+    client: 5013
+    network: 5012
+    mongodb: 27018
+    redis: 6380
+    rabbitMQ: 
+        - 5673
+        - 15673
+
+webhook: 3005
+```
+
