@@ -51,9 +51,8 @@ Webhooks are configured to handle communication events, acting as endpoints that
 
 This component acts as an interface, allowing the adaptation of Beckn Protocol-specific JSON schemas within the system. It ensures seamless integration of Beckn-specific data structures with the internal system, facilitating smooth communication.
 
-### 6. Database Handler API and MongoDB (Dockerized)
-
-The Database Handler API, along with MongoDB, has been Dockerized, consolidating both components into a single unit for simplified deployment. This Dockerization enables easier management and deployment of MongoDB and its associated API handler within the system.
+### 6. Database Handler API and MongoDB
+The Database Handler API interacts with the MongoDB database, managing data operations such as storage and retrieval. It ensures efficient management of user credentials and other essential system data stored within MongoDB. The Database Handler API, along with MongoDB, has been Dockerized, consolidating both components into a single unit for simplified deployment.
 
 ## Conclusion
 
