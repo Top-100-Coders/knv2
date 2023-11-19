@@ -1,0 +1,26 @@
+soo first Start docker 
+
+to do this go to BPP/network/docker
+to do this go to BAP/client/
+>command : docker-compose up
+
+Next start server
+to do this go to BAP/client/
+to do this go to BPP/client/
+to do this go to BAP/network/
+to do this go to BPP/network/
+
+>npm i 
+>npm rundev
+ 
+TUNNELING
+
+npx localtunnel --port 5002 --subdomain mulearn-deva-bap
+npx localtunnel --port 5005 --subdomain mulearn-deva-bpp
+
+Finally running webhook
+
+to do this go to BPP/becken(smth)_webhook
+> npm start dev
+
+next send request from postman 
