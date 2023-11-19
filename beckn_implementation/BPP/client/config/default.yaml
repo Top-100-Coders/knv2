@@ -1,18 +1,18 @@
 # Mandatory
 server:
-  port: 5002
+  port: 5012
 
 # Mandatory.
 cache:
   host: "127.0.0.1"
-  port: 6379
+  port: 6380
   ttl: "PT10M"
   # Optional. Default is 0.
   db: 1
 
 # Optional.
 responseCache:
-  mongoURL: "mongodb://tvast:password@127.0.0.1:27017/ps?authSource=admin"
+  mongoURL: "mongodb://tvast:password@127.0.0.1:27018/ps?authSource=admin"
   ttl: "PT10M"
 
 # Mandatory.
@@ -22,13 +22,13 @@ responseCache:
 # 3. pubSub
 client:
   # synchronous: 
-  #   mongoURL: "mongodb://127.0.0.1:27017/protocolserver-v2-response-cache"
+  #   mongoURL: "mongodb://127.0.0.1:27018/protocolserver-v2-response-cache"
 
   webhook:
    url: "http://localhost:3005"
   
   #messageQueue: 
-  #  amqpURL: "amqp://guest:guest@localhost:5672"
+  #  amqpURL: "amqp://guest:guest@localhost:5673"
   #  incomingQueue: "protocol-server-incoming"
   #  outgoingQueue: "protocol-server-outgoing"
 
@@ -43,7 +43,7 @@ app:
     mode: network
     inboxQueue: "inbox"
     outboxQueue: "outbox"
-    amqpURL: "amqp://tvast:password@127.0.0.1:5672"
+    amqpURL: "amqp://tvast:password@127.0.0.1:5673"
 
   # Mandatory.
   actions:
