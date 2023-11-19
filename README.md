@@ -49,7 +49,7 @@ The team and their valuable contributions are as follows:
 - **Front-end Integration:**
   - Joshua was responsible for integrating the project's back-end functionalities with the front-end. This includes connecting user interfaces to the underlying logic, ensuring a smooth and responsive user experience.
 
-- **UI Design:**
+- **UI/UX :**
   - Joshua contributed to the aesthetics and usability of the project by designing intuitive user interfaces. This involves creating visually appealing layouts and optimizing the user journey.
 
 ## Adish
@@ -62,7 +62,7 @@ The team and their valuable contributions are as follows:
 
 ## Vyshnav 
 
-- **UI Design:**
+- **UI/UX:**
   - Vyshnav collaborated on the UI design, contributing to the visual elements and user experience. This includes designing user interfaces that are not only aesthetically pleasing but also user-friendly and efficient.
 
 - **JSON Configuration:**
