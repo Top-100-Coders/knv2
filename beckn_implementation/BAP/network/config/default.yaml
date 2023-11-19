@@ -86,7 +86,7 @@ app:
 
   # Mandatory.
   subscriberId: "knv2_participant.dsep:talent.BAP"
-  subscriberUri: "https://knv2-bap.loca.lt"
+  subscriberUri: "https://knv2-bap-network.loca.lt"
   
   # Mandatory.
   registryUrl: https://registry.becknprotocol.io/subscribers
