@@ -2,5 +2,5 @@
 **/node_modules/
 
 # Ignore docker data folders in BPP and BAP directories
-BPP/data/
-BAP/data/
+beckn_implementation/BPP/data/
+beckn_implementation/BAP/data/
