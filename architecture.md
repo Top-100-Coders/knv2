@@ -6,7 +6,6 @@ KARMA-NET integrates the Beckn Protocol with the Mulearn Karma ecosystem, enabli
 
 ![KARMA-NET Architecture](https://camo.githubusercontent.com/a83fe4902f2bca2f6864e716dcfa420db4f9710dd2a595289d187ee5e93da313/68747470733a2f2f692e696d6775722e636f6d2f7874705a4141622e706e67)
 
-[Caption: Overview of KARMA-NET Architecture]
 
 ## Architecture Flow
 
