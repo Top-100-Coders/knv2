@@ -1,0 +1,26 @@
+version: '3.0'
+
+services:
+  mongodb:
+    image: mongo:6.0.9-rc0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${DB_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - "27019:27017"
+
+  api_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data/api/:/data/api
+    environment:
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      API_AUTH_KEY: ${API_AUTH_KEY}
+      GUNICORN_CMD_ARGS: "--access-logfile /data/api/gunicorn_access.log --error-logfile /data/api/gunicorn_error.log"
+    ports:
+      - "8069:8000"
