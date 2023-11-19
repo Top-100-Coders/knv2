@@ -2,6 +2,12 @@
 
 KARMA-NET integrates the Beckn Protocol with the Mulearn Karma ecosystem, enabling talent discovery within an open network environment. This comprehensive document provides an in-depth explanation of the system's architecture flow, including frontend details and Beckn Protocol integration.
 
+## Architecture Image
+
+![KARMA-NET Architecture](https://camo.githubusercontent.com/a83fe4902f2bca2f6864e716dcfa420db4f9710dd2a595289d187ee5e93da313/68747470733a2f2f692e696d6775722e636f6d2f7874705a4141622e706e67)
+
+[Caption: Overview of KARMA-NET Architecture]
+
 ## Architecture Flow
 
 ### 1. GUI (Frontend Development)
@@ -46,9 +52,9 @@ Webhooks are configured to handle communication events, acting as endpoints that
 
 This component acts as an interface, allowing the adaptation of Beckn Protocol-specific JSON schemas within the system. It ensures seamless integration of Beckn-specific data structures with the internal system, facilitating smooth communication.
 
-### 6. Database Handler API and MongoDB
+### 6. Database Handler API and MongoDB (Dockerized)
 
-The Database Handler API interacts with the MongoDB database, managing data operations such as storage and retrieval. It ensures efficient management of user credentials and other essential system data stored within MongoDB.
+The Database Handler API, along with MongoDB, has been Dockerized, consolidating both components into a single unit for simplified deployment. This Dockerization enables easier management and deployment of MongoDB and its associated API handler within the system.
 
 ## Conclusion
 
