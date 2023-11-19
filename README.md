@@ -70,3 +70,6 @@ The team and their valuable contributions are as follows:
 
 
 ---
+## Note
+
+Unfortunately the time frame for the challenge proved to be a bit too hard and we couldnt integrate all the parts of the program togather. Some unfortunate incidents had sabatoged our pace, the Induvidual Parts work but we have not been able to integrate the whole project. We plan on getting it done soon.
