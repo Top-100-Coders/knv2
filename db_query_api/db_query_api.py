@@ -20,13 +20,10 @@ client = pymongo.MongoClient('mongodb://localhost:27017/')
 
 # Choose the database and collection
 db = client['mulearn']
+collection = db['student_profiles']
 
 
 def search_candidates(name=None, location=None, karma=None):
-    # Connect to the MongoDB server
-
-    collection = db['student_profiles']
-
     # Build the query based on the given criteria
     query = {}
 
@@ -57,6 +54,24 @@ def search():
 
     candidates = search_candidates(name, location, karma)
     return candidates
+
+
+@app.route('/add_data', methods=['POST'])
+def add_data():
+    data = request.get_json()
+    values = data.get('values')
+
+    if not isinstance(values, list):
+        r = make_response(json.dumps(
+            {'error': 'Invalid request body format'}, cls=CustomJSONEncoder))
+        r.headers['Content-Type'] = 'application/json'
+        return r
+
+    result = collection.insert_many(data)
+    r = make_response(json.dumps(
+        {'ids': result}, cls=CustomJSONEncoder))
+    r.headers['Content-Type'] = 'application/json'
+    return r
 
 
 if __name__ == '__main__':
