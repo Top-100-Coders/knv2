@@ -46,4 +46,55 @@ Backend DB + API Interface:
     mongodb: 27019
     api: 8069
 ```
+# Contributions
 
+The team and their valuable contributions are as follows:
+
+## Govind - (Lead)
+
+- **Adapter Creation:**
+  - Govind took charge of creating adapters, ensuring seamless communication between different components of the project. The adapters he created provided the crucial functionality of converting JSON format to Beckenifed data and vice versa.
+
+- **Database:**
+  - Govind was responsible for the design and implementation of the project's database. This includes defining the schema and optimizing queries for efficient data retrieval and storage.
+
+- **Webhook:**
+  - Govind implemented webhook functionalities, enabling real-time communication between the project and services. This is crucial for timely updates and data synchronization.
+
+## Riza
+
+- **Documentation:**
+  - Riza played a pivotal role in documenting the project. This involves creating comprehensive documentation that outlines the project's architecture, functionalities, and usage. Clear documentation contributes to easier onboarding and maintenance.
+
+- **BAP Creation:**
+  - Riza initiated the creation of Business Activity Processes (BAPs), defining the high-level business processes within the system. These BAPs serve as a foundation for understanding and optimizing business workflows.
+
+- **OpenAI Integration (WIP):**
+  - Riza is actively working on integrating OpenAI into the project. This involves incorporating advanced AI capabilities to enhance the system's functionality and provide intelligent responses.
+
+## Joshua
+
+- **Front-end Integration:**
+  - Joshua was responsible for integrating the project's back-end functionalities with the front-end. This includes connecting user interfaces to the underlying logic, ensuring a smooth and responsive user experience.
+
+- **UI Design:**
+  - Joshua contributed to the aesthetics and usability of the project by designing intuitive user interfaces. This involves creating visually appealing layouts and optimizing the user journey.
+
+## Adish
+
+- **Beckn Integration:**
+  - Adish led the integration of the Beckn protocol into the project. He helped the team understand the principles of the Beckn protocol and implement it into the project. He set up both the network and client halves of the BPP, the webhook, and the connections required.
+
+- **Database and Connectivity:**
+  - Adish played a crucial part in defining the database and connectivity in the project, which deals with retrieving the data of the candidates from the custom set server rather than the sandbox URL.
+
+## Vyshnav 
+
+- **UI Design:**
+  - Vyshnav collaborated on the UI design, contributing to the visual elements and user experience. This includes designing user interfaces that are not only aesthetically pleasing but also user-friendly and efficient.
+
+- **JSON Configuration:**
+  - Vyshnav worked on the configuration of JSON files within the project. This involves specifying settings, parameters, and preferences in a structured JSON format, enabling easy customization and adaptability.
+
+
+---
