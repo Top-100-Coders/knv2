@@ -1,6 +1,6 @@
 # Mandatory
 server:
-  port: 5013
+  port: 5012
 
 # Mandatory.
 cache:
@@ -40,7 +40,7 @@ app:
   # Two types of gateway mode present.
   # client and network.
   gateway:
-    mode: client
+    mode: network
     inboxQueue: "inbox"
     outboxQueue: "outbox"
     amqpURL: "amqp://tvast:password@127.0.0.1:5673"
@@ -57,12 +57,11 @@ app:
       confirm:
         ttl : "PT10S"
       status:
-        ttl: "PT10S"
+        ttl : "PT10S"
       get_cancellation_reasons:
         ttl: "PT10S"
       get_rating_categories:
         ttl: "PT10S"
-      
     
     responses: 
       on_search:
@@ -86,13 +85,13 @@ app:
   publicKey: "QRd3B8t4i53JwelSLERJzUK6+Ybgh5pb1TKAXKSTIUk="
 
   # Mandatory.
-  subscriberId: "mulearn-hackninjas-bpp"
-  subscriberUri: "https://mulearn-hackninjas-bpp.loca.lt"
+  subscriberId: "knv2_participant_bpp.dsep:talent.BPP"
+  subscriberUri: "https://knv2-bpp.loca.lt"
   
   # Mandatory.
   registryUrl: https://registry.becknprotocol.io/subscribers
-  auth: false
-  uniqueKey: "mulearn-hackninjas-bpp-key"
+  auth: true
+  uniqueKey: "knv2-bpp-key"
   
   # Mandatory.
   city: "std:080"
