@@ -39,5 +39,9 @@ BPP:
         - 15673
 
 webhook: 3005
+
+Backend DB + API Interface:
+    mongodb: 27019
+    api: 8069
 ```
 
