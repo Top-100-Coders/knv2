@@ -3,6 +3,7 @@ from flask_cors import CORS
 import json
 import pymongo
 from bson import ObjectId
+import os
 
 
 class CustomJSONEncoder(json.JSONEncoder):
@@ -15,8 +16,14 @@ class CustomJSONEncoder(json.JSONEncoder):
 app = Flask(__name__)
 CORS(app)
 
+host = 'localhost'
+port = 27017
+username = os.environ.get("DB_USERNAME")
+password = os.environ.get("DB_PASSWORD")
 
-client = pymongo.MongoClient('mongodb://localhost:27017/')
+connection_string = f'mongodb://{username}:{password}@{host}:{port}'
+client = pymongo.MongoClient(connection_string)
+
 
 # Choose the database and collection
 db = client['mulearn']
@@ -67,7 +74,7 @@ def add_data():
         r.headers['Content-Type'] = 'application/json'
         return r
 
-    result = collection.insert_many(data)
+    result = collection.insert_many(values)
     r = make_response(json.dumps(
         {'ids': result}, cls=CustomJSONEncoder))
     r.headers['Content-Type'] = 'application/json'

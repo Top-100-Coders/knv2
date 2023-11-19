@@ -4,3 +4,4 @@
 # Ignore docker data folders in BPP and BAP directories
 beckn_implementation/BPP/data/
 beckn_implementation/BAP/data/
+db_query_api/data
