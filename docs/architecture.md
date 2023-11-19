@@ -6,6 +6,34 @@ KARMA-NET integrates the Beckn Protocol with the Mulearn Karma ecosystem, enabli
 
 ![KARMA-NET Architecture](https://camo.githubusercontent.com/a83fe4902f2bca2f6864e716dcfa420db4f9710dd2a595289d187ee5e93da313/68747470733a2f2f692e696d6775722e636f6d2f7874705a4141622e706e67)
 
+## Port Mapping 
+we reconfigured the default port mappings of multiple components and renamed a few services so that they all run in the same system without conflicts, make sure to have these ports free
+
+```
+BAP:
+    client: 5003
+    network: 5002
+    mongodb: 27017
+    redis: 6379
+    rabbitMQ: 
+        - 5672
+        - 15672
+
+BPP:
+    client: 5013
+    network: 5012
+    mongodb: 27018
+    redis: 6380
+    rabbitMQ: 
+        - 5673
+        - 15673
+
+webhook: 3005
+
+Backend DB + API Interface:
+    mongodb: 27019
+    api: 8069
+```
 
 ## Architecture Flow
 
