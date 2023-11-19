@@ -4,6 +4,7 @@ config/*.yaml
 !config/config-sample.yaml
 !config/old-config-sample.yaml
 !config/new-config-sample.yaml
+!config/default.yaml
 logs/*
 *.pem
 config/default.yml
