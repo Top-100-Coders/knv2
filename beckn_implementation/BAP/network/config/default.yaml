@@ -85,13 +85,13 @@ app:
   publicKey: "2SJSvAw7iAH6pKKgG7cvH7rrZRMLz84xo4LpawgHMTQ"
 
   # Mandatory.
-  subscriberId: "mulearn-hackninjas-bap"
-  subscriberUri: "https://mulearn-hackninjas-bap.loca.lt/"
+  subscriberId: "knv2_participant.dsep:talent.BAP"
+  subscriberUri: "https://knv2-bap.loca.lt"
   
   # Mandatory.
   registryUrl: https://registry.becknprotocol.io/subscribers
   auth: true
-  uniqueKey: "mulearn-hackninjas-bap-key"
+  uniqueKey: "knv2-bap-key"
   
   # Mandatory.
   city: "std:080"
