@@ -1,65 +1,57 @@
-# KARMA-NET Architecture Documentation
+# KARMA-NET Architecture Overview and Flow
 
-## Overview
+KARMA-NET integrates the Beckn Protocol with the Mulearn Karma ecosystem, enabling talent discovery within an open network environment. This comprehensive document provides an in-depth explanation of the system's architecture flow, including frontend details and Beckn Protocol integration.
 
-KARMA-NET aims to integrate the Beckn Protocol with the Mulearn Karma ecosystem, enabling talent discovery in an open network. The architecture comprises distinct layers, including the GUI, Adapter API/Parser, Beckn Application Protocol (BAP), Beckn Platform Protocol (BPP), Webhook, Adapter API Explainer, and the Database.
+## Architecture Flow
 
----
+### 1. GUI (Frontend Development)
 
-## GUI Layer (Vue.js and Figma)
+The Graphical User Interface (GUI), built using React.js, acts as the primary interface for user interaction. It includes various features such as user authentication, navigation menus, data displays, and other functionalities for seamless user experience.
 
-The GUI layer is built using Vue.js and incorporates design assets from Figma. It ensures a user-friendly interface for seamless interactions within the KARMA-NET system.
+#### Authentication in GUI
 
----
+Utilizing JSON Web Tokens (JWT), the GUI implements secure user authentication. JWT tokens are generated upon successful user login and stored on the client-side. These tokens are then transmitted with subsequent requests, enabling secure access to system resources while maintaining user session integrity.
 
-## Adapter API / Parser
+### 2. Adapter API / JSON Parser for Beckn Schema
 
-The Adapter API/Parser acts as a vital bridge, converting JSON data into the required format compatible with the Beckn Adapter Protocol (BAP). It facilitates smooth integration and interaction within the protocol.
+The Adapter API serves a critical role, translating and adapting data between the Beckn Protocol schema and the internal system schema. It acts as a middleware, parsing incoming and outgoing data to ensure compatibility and seamless communication within the system.
 
----
+### 3. Beckn Protocol Implementation
 
-## Beckn Application Protocol (BAP)
+#### BAP (Beckn Adapter APIs for Mulearn Backend)
 
-### Client
+- **Client:** Manages client-side interactions, facilitating user engagement.
+- **RabbitMQ:** Enables asynchronous messaging for inter-component communication.
+- **Redis:** Optimizes data retrieval and storage through efficient caching mechanisms.
+- **MongoDB:** Acts as the primary database for system and user-related data storage.
+- **Network:** Centralized component managing communication across the network.
 
-The Client interface serves as the primary user interaction point, facilitating user engagement. It interfaces with the Adapter API/Parser to manage initial data processing stages.
+#### Registry and Gateway
 
-### Network
+These components serve as the entry point and registry, enabling discovery and interaction among various services within the network. They facilitate easy access to specific data domains and services within the system.
 
-The Network component lies at the core of the Beckn Protocol, acting as a registry area. It manages interactions with dependencies such as RabbitMQ, MongoDB, and Redis, essential for Client and Network functionalities.
+#### BPP (Beckn Protocol Platform)
 
-#### Dependencies:
-- **RabbitMQ:** Facilitates messaging and communication.
-- **MongoDB:** Serves as a robust storage backend.
-- **Redis:** Enables efficient caching and data retrieval.
+- **Network:** Manages network-related functionalities for connectivity and communication.
+- **RabbitMQ:** Facilitates messaging and communication within the platform.
+- **Redis:** Enables efficient data caching for improved performance.
+- **MongoDB:** Stores platform-specific data necessary for comprehensive management.
+- **Client:** Supports client-side operations within the platform, enhancing user interactions.
 
-### Registry and Gateway
+### 4. Webhook Configuration
 
-These components enable the retrieval of product/domain-specific information. They offer a gateway for users to access and search for specific data domains within the system.
+Webhooks are configured to handle communication events, acting as endpoints that trigger specific actions or events within the system.
 
----
+### 5. Adapter API - Beckn Schema JSON
 
-## Beckn Platform Protocol (BPP)
+This component acts as an interface, allowing the adaptation of Beckn Protocol-specific JSON schemas within the system. It ensures seamless integration of Beckn-specific data structures with the internal system, facilitating smooth communication.
 
-Similar to BAP, BPP comprises Network and Client interfaces, managing interactions with MongoDB, Redis, and RabbitMQ. It emphasizes decentralization and complements the functionalities of BAP.
+### 6. Database Handler API and MongoDB
 
-### Webhook
+The Database Handler API interacts with the MongoDB database, managing data operations such as storage and retrieval. It ensures efficient management of user credentials and other essential system data stored within MongoDB.
 
-The Webhook acts as a data broadcast mechanism, connecting different applications within the Beckn ecosystem. It adheres strictly to the Beckn specified schema, translating schema to a database-compatible JSON format, and acting as a data bridge.
+## Conclusion
 
----
+The detailed breakdown of the KARMA-NET architecture showcases the integration of Beckn Protocol functionalities with the Mulearn Karma ecosystem. The GUI serves as a user-friendly interface, implementing JWT-based authentication, while various components in the backend handle communication, data storage, and system integration across the Beckn Protocol network.
 
-## Adapter API Explainer
-
-The Adapter API Explainer provides an interface for interpreting and clarifying Beckn protocol-related data. It simplifies complexities within the protocol, ensuring clarity in interactions.
-
----
-
-## Database (DB Handler API and MongoDB)
-
-At the heart of the system lies the Database, comprising the DB Handler API and MongoDB. This central hub manages and stores essential data vital for the seamless functioning of the KARMA-NET ecosystem.
-
----
-
-![KARMA-NET Architecture Diagram](https://camo.githubusercontent.com/a83fe4902f2bca2f6864e716dcfa420db4f9710dd2a595289d187ee5e93da313/68747470733a2f2f692e696d6775722e636f6d2f7874705a4141622e706e67)
-
+This documentation provides a clear understanding of the system's flow, frontend authentication, Beckn Protocol integration, and individual component functionalities within the KARMA-NET architecture.
