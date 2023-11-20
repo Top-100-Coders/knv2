@@ -7,7 +7,7 @@ so that others can host programs in this network and award karma and this can be
   
 In the hackathon we focused on just the discoverability aspect of mulearn profiles on the network
 
-> Previous History of Project available at : https://github.com/Top-100-Coders/knv2/blob/main/docs/history.md
+> Previous History of Project available at : [history](https://github.com/Top-100-Coders/knv2/blob/main/docs/history.md)
 
 ## Higher Level Architecture :  
 ![image](https://i.imgur.com/xtpZAAb.png)
