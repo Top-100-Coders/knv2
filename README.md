@@ -39,7 +39,7 @@ The team and their valuable contributions are as follows:
   - Riza played a pivotal role in documenting the project. This involves creating comprehensive documentation that outlines the project's architecture, functionalities, and usage. Clear documentation contributes to easier onboarding and maintenance.
 
 - **BAP Creation:**
-  - Riza initiated the creation of Business Activity Processes (BAPs), defining the high-level business processes within the system. These BAPs serve as a foundation for understanding and optimizing business workflows.
+  - Riza initiated the creation of Beckn Application Protocol (BAPs) . These BAPs serve as a foundation for understanding and optimizing business workflows.
 
 - **OpenAI Integration (WIP):**
   - Riza is actively working on integrating OpenAI into the project. This involves incorporating advanced AI capabilities to enhance the system's functionality and provide intelligent responses.
