@@ -16,7 +16,7 @@ In the hackathon we focused on just the discoverability aspect of mulearn profil
 - The Adapter APIs are responsible for parsing our API requests to be compatible with beckn protocol ( see Specification [here](https://github.com/beckn/DSEP-Specification/tree/draft/examples/student-connect/) ) and vice versa
 - The GUI Layer is conventional Front End systems that we are familiar with and therfore isnt detailed here
   
-More can be read here : [architecture.md
+More about the architecture can be read here : [architecture.md
 ](https://github.com/Top-100-Coders/knv2/blob/main/docs/architecture.md)
 
 # Contributions
