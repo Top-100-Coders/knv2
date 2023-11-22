@@ -1,20 +1,11 @@
 ---
 name: 'Project Review '
 about: 'Top 100 Coders Final Evaluation Criterion '
-title: ''
-labels: ''
+title: "[Review]"
+labels: reviewed
 assignees: ''
 
 ---
-
----
-name: top100coders | Submission Review
-about: Template for mentors to conduct a developer-focused review of hackathon submissions.
-title: "Product Submission: [Team][Project Name]"
-labels: developer-review
----
-
-## Review for [Team][Project Name]
 
 ### Innovation and Creative Use of AI
 - [ ] Does the project present a novel approach or a unique use of AI?
@@ -43,6 +34,14 @@ labels: developer-review
 ### Comprehensiveness of Testing and Documentation
 - [ ] Is there sufficient documentation for the code and its functionalities?
 - [ ] Is the testing comprehensive and effective?
+
+### Financial Feasibility and Resource Management
+ - [ ]  Has there been a thorough cost-benefit analysis considering the cost of AI integration, including potential OpenAI API costs?
+-  [ ]  Are there strategies in place for optimizing resource usage to balance performance and cost?
+
+ ### AI Ethics and Fairness
+- [ ]  Does the project consider ethical implications and biases in AI models?
+- [ ]  Are there measures to ensure fairness and transparency in AI application?
 
 ### Overall Technical Excellence
 - [ ] Overall, does the technical aspect of the project stand out?
